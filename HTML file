@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Game Recommender</h1>
+    </header>
+    <main>
+        <section id="filters">
+            <h2>Filter Games</h2>
+            <label for="platform">Platform:</label>
+            <select id="platform">
+                <option value="all">All</option>
+                <option value="pc">PC</option>
+                <option value="playstation">PlayStation</option>
+                <option value="nintendo">Nintendo</option>
+                <!-- Add more platforms as needed -->
+            </select>
+
+            <label for="genre">Genre:</label>
+            <select id="genre">
+                <option value="all">All</option>
+                <option value="action">Action</option>
+                <option value="rpg">RPG</option>
+                <option value="strategy">Strategy</option>
+                <!-- Add more genres as needed -->
+            </select>
+
+            <label for="hours">Hours of Gameplay:</label>
+            <select id="hours">
+                <option value="all">All</option>
+                <option value="short">Less than 10 hours</option>
+                <option value="medium">10-30 hours</option>
+                <option value="long">More than 30 hours</option>
+            </select>
+
+            <label for="rating">Rating:</label>
+            <select id="rating">
+                <option value="all">All</option>
+                <option value="4">4 stars & up</option>
+                <option value="3">3 stars & up</option>
+                <option value="2">2 stars & up</option>
+            </select>
+
+            <button id="filter-btn">Filter</button>
+        </section>
+
+        <section id="results">
+            <h2>Recommended Games</h2>
+            <div id="game-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
